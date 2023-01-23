@@ -148,3 +148,20 @@ main section:nth-child(even) {
 }
 
 /* Footer */
+.logo-footer,.bottone{
+    background-color: #f08080;
+    padding: 10px;
+
+}
+.footer-top {
+    display: flex;
+    background-color: #23272a;
+}
+
+.row-footer {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    padding: 20px;
+    background-color: #7fffd4;
+}
