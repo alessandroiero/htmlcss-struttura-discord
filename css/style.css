@@ -1,86 +1,150 @@
 /* Reset */
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /* Debug */
-.debug .container-small,.debug .container{
-    border:2px dashed;
-}
-.debug header{
-    height: 80px;
-    background-color: #add8e6;
+.debug .container-small,
+.debug .container , .debug .box, .debug .bordi{
+    border: 2px dashed;
 }
 
-.debug .headersuperiore{
-    padding: 20px;
+.debug .headersuperiore {
+    background-color: #add8e6
 }
-.debug .headerbottom{
-    height: 500px;
+
+.debug .headerbottom {
     background-color: #00008b;
 }
-.debug .container.header-top{
-    height: 40px;
+
+.debug .container.header-top {
     background-color: #daa520;
 }
-.debug .col{
-    border: 2px dashed;
-    padding: 10px;
-    justify-content: space-between;
+
+.debug section:nth-child(5),
+.debug footer {
+    background-color: #23272a;
+
 }
 
-
 /* Common */
-.row{
+.row {
     display: flex;
 }
 
-.container{
+.container {
+    display: flex;
     max-width: 1200px;
-    height: 100px;
+    margin: auto;
 }
 
-.container-small{
+.container-small {
     width: 900px;
     height: 400px;
     background-color: #ee82ee;
 }
 
-.container-small, .container{
+.container.green {
+    width: 1200px;
+    height: 1000px;
+    background-color: green;
+}
+
+.container-small,
+.container,
+.container.green {
     margin: 0 auto;
 }
 
+
+
 /* Header */
-.col.link{
+.headersuperiore {
+    padding: 20px;
+}
+
+.col {
+    padding: 10px;
+    border: 1px dashed;
+}
+
+.col.link {
     width: 60%;
 }
-.col.logo, .col.login{
+
+.col.logo,
+.col.login {
     width: 20%;
 }
 
-.col.login{
+.col.login {
     display: flex;
     justify-content: flex-end;
 }
 
-nav ul { 
+nav ul {
     display: flex;
     list-style: none;
     justify-content: center;
     gap: 10px;
 }
-.headerbottom{
+
+.headerbottom {
+    padding: 20px;
     display: flex;
-    align-items: center;
-}
-.container-small{
     align-items: center;
 }
 
 /* Main */
 
+section {
+    padding: 40px;
+}
 
+main:nth-child(odd) {
+    background-color: white;
+}
+
+main section:nth-child(even) {
+    background-color: #d3d3d3;
+}
+
+.col-1 {
+    width: 60%;
+    height: 500px;
+    background-color: #1e90ff;
+}
+
+.col-2 {
+    width: 40%;
+    height: 500px;
+    background-color: #ffc0cb;
+}
+
+.quintasezione {
+    display: flex;
+}
+
+.coll-small2 {
+    width: 35%;
+}
+
+.coll-big2 {
+    width: 100%;
+    height: 570px;
+    display: flex;
+}
+.coll-small2 {
+    height: 570px;
+    background-color: #f08080;
+}
+
+.box {
+    width: 25%;
+    height: 570px;
+    background-color: #7fffd4;
+}
 
 /* Footer */
