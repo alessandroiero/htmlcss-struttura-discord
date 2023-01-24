@@ -15,10 +15,12 @@
 
 .debug .container-small {
     background-color: #ee82ee;
+    height: 400px;
 }
 
 .debug .container.green {
     background-color: green;
+    height: 1000px;
 }
 
 .debug .headersuperiore {
@@ -38,7 +40,9 @@
     background-color: #23272a;
 
 }
-
+.debug .row{
+    align-items: flex-start;
+}
 .debug .row-footer {
     background-color: #7fffd4;
 
@@ -51,10 +55,28 @@
 .debug .col-2 {
     background-color: #ffc0cb;
 }
+.debug .col-1 {
+    background-color: #1e90ff;
+}
+
+.debug .footer-top {
+    background-color: #23272a;
+}
+
+.debug .logo-footer,
+.bottone {
+    background-color: #f08080;
+}
+   
+.debug .box {
+    background-color: #7fffd4;
+}
 
 /* Common */
 .row {
     display: flex;
+    align-items: flex-start;
+    margin: 0 -10;
 }
 
 .container {
@@ -65,18 +87,16 @@
 
 .container-small {
     width: 900px;
-    height: 400px;
 }
 
 .container.green {
     max-width: 1200px;
-    height: 1000px;
 }
 
 .container-small,
 .container,
-.container.green {
-    margin: 0 auto;
+.container.green, .headerbottom {
+    justify-content: center;
 }
 
 /* Header */
@@ -117,12 +137,13 @@ a{
     padding: 20px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 /* Main */
 
 section {
-    padding: 40px;
+    padding: 40px 0px;
 }
 
 main:nth-child(odd) {
@@ -132,20 +153,18 @@ main:nth-child(odd) {
 main section:nth-child(even) {
     background-color: #d3d3d3;
 }
-
+.col-1,.col-2{
+    height: 500px;
+}
 .col-1 {
     width: 60%;
-    height: 500px;
-    background-color: #1e90ff;
 }
 
 .col-2 {
     width: 40%;
-    height: 500px;
-    background-color: #ffc0cb;
 }
 
-.quintasezione {
+.row {
     display: flex;
 }
 
@@ -154,7 +173,7 @@ main section:nth-child(even) {
 }
 
 .coll-big2,
-.coll-small2 {
+.coll-small2, .box{
     height: 570px;
 }
 
@@ -165,21 +184,17 @@ main section:nth-child(even) {
 
 .box {
     width: 25%;
-    height: 570px;
-    background-color: #7fffd4;
 }
 
 /* Footer */
 .logo-footer,
 .bottone {
-    background-color: #f08080;
     padding: 10px;
 
 }
 
 .footer-top {
     display: flex;
-    background-color: #23272a;
 }
 
 .row-footer {
